@@ -13,5 +13,9 @@ beforeEach ( () => {
 });
 
 describe('Dashboard component', () => {
+    test('matches the snapshot', () => {
+        expect(wrapper.container).toMatchSnapshot();
+    })
+
 
 });
