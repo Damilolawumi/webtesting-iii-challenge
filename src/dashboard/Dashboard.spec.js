@@ -17,5 +17,11 @@ describe('Dashboard component', () => {
         expect(wrapper.container).toMatchSnapshot();
     })
 
+    test('shows the controls and display', () => {
+      expect(wrapper.queryByText(/close gate/i)).toBeInTheDocument();
+      expect(wrapper.queryByText(/lock gate/i)).toBeInTheDocument();
+      expect(wrapper.queryByText(/open gate/i)).not.toBeInTheDocument();
+      expect(wrapper.queryByText(/unlock gate/i)).not.toBeInTheDocument();
+    });
 
 });
