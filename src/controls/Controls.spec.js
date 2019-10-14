@@ -50,5 +50,5 @@ describe('Control component', () => {
     test('the locked toggle button is disabled if the gate is open', () => {
         expect(wrapper.queryByText(/lock gate/i).disabled).toEqual(true);
         expect(wrapper.queryByText(/open/i)).toBeInTheDocument();
-    })
+    });
 });
