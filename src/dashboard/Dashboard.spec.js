@@ -10,8 +10,8 @@ let wrapper;
 
 beforeEach ( () => {
     wrapper = rtl.render(<Dashboard/>);
-})
+});
 
 describe('Dashboard component', () => {
-    
-})
+
+});
